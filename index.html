@@ -5,15 +5,12 @@
  </head>
 
  <body>
-    <form action="cgi-bin/abc.cgi" method="post">
-        <p>
-        パスワード：<input type="password" name="pass" size="10" maxlength="8"><br>
-        名前：<input type="text" name="namae" size="40" maxlength="20">
-        </p>
-        <p>
-        <input type="submit" value="送信する">
-        </p>
-        </form>
+    <script type="text/javascript">
+        function gate() {
+           var UserInput = prompt("パスワードを入力して下さい:","");
+           location.href = UserInput + ".html";
+        }
+     </script>
   Hello,World
  </body>
 
