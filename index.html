@@ -16,11 +16,19 @@
         }
      </script><br>
  <a href="https://www.google.com/">google</a>先のページ<br>
- <a href="https://bookmeter.com/users/1164528/books/read">読書メーター</a>
+ <a href="https://bookmeter.com/users/1164528/books/read">読書メーター</a><br>
   <script>
  dd = new Date();
  document.write(dd.toLocaleString());
-  </script>
+  </script><br>
+  <script>
+ window.onload = function() {
+   setInterval(function() {
+     var dd = new Date();
+     document.getElementById("T1").innerHTML = dd.toLocaleString();
+   }, 1000);
+ }
+ </script>
  </body>
 
 </html>
